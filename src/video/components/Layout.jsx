@@ -8,7 +8,7 @@ import StyledPlayList from '../styled/StyledPlayList';
 
 const Layout = ({children})=>{
   return(
-    <div className="row w-100 m-0 align-items-start" style={{height: 'calc(100vh - 56px)', maxHeight: '100%'}}>
+    <div className="row w-100 m-0 align-items-start" style={{height: 'calc(100vh - 57px)', maxHeight: '100%'}}>
       <VideoContainer className="col-12 col-lg-8">
         { children }
       </VideoContainer>

@@ -16,7 +16,7 @@ const ListItem = ()=>{
           </div>
         </div>
         <div className="col-8 p-2">
-            <h5 className="text-white">
+            <h5>
               Item
             </h5>
         </div>

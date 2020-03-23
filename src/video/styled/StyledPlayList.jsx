@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledPlayList = styled.div`
-  height: calc(100% - 53px);
+  height: calc(100% - 54px);
   top: 53px;
   left: 0;
 
