@@ -9,18 +9,21 @@ import E404 from './pages/E404';
 
 const darkTheme = {
   backgroundColor: '#1e2021',
-  color: '#fafafa'
+  color: '#fafafa',
+  colorHover: '#1ae8ff'
 };
 
 const ligthTheme = {
   backgroundColor: '#fafafa',
-  color: '#212121'
+  color: '#212121',
+  colorHover: '#2979ff',
 };
 
 class App extends React.Component{
   constructor(props){
     super(props);
     this.changeTheme = this.changeTheme.bind(this);
+
     this.state = {
       theme: true
     }
