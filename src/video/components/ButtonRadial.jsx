@@ -78,7 +78,7 @@ const ButtonRadial = ({ changeTheme })=>{
           }),
         }}
       >
-        <IoMdBulb />
+        <IoIosMoon />
       </animated.div>
       <div className=" p-0 d-flex align-items-center justify-content-center">
         <Button onClick={changeHandler}>
@@ -102,7 +102,7 @@ const ButtonRadial = ({ changeTheme })=>{
           }),
         }}
       >
-        <IoIosMoon />
+        <IoMdBulb />
       </animated.div>
       
       

@@ -36,7 +36,7 @@ class App extends React.Component{
   render(){
     return(
       <Router>
-        <ThemeProvider theme={ this.state.theme ? ligthTheme : darkTheme }>
+        <ThemeProvider theme={ this.state.theme ? darkTheme : ligthTheme }>
           <NavBar changeTheme={this.changeTheme}/>
           <Switch>
             <Route exact path="/" component={ Home } />

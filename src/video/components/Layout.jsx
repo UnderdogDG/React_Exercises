@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { useDrag } from 'react-use-gesture';
 import { useSprings, animated } from 'react-spring';
 
 import ListItem from './ListItem';
@@ -22,6 +23,7 @@ const Layout = ({children})=>{
 
   const order = useRef(videos.playlist.map((_, index)=>index));
   const [ springs, setSprings ] = useSprings(order.current.length, fn(order.current));
+  const bind = useDrag();
 
   return(
     <div className="row w-100 m-0 align-items-start" style={{height: 'calc(100vh - 57px)', maxHeight: '100%'}}>
@@ -34,10 +36,12 @@ const Layout = ({children})=>{
             {
               springs.map((_, i) =>{
                 return (
-                  <animated.div key={i}>
-                    <ListItem 
-                      {...videos.playlist[i]}
-                    />
+                  <animated.div 
+                    {...bind}
+                    key={i}>
+                      <ListItem 
+                        {...videos.playlist[i]}
+                      />
                   </animated.div>
                 )
               })
