@@ -7,17 +7,7 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import E404 from './pages/E404';
 
-const darkTheme = {
-  backgroundColor: '#1e2021',
-  color: '#fafafa',
-  colorHover: '#1ae8ff'
-};
-
-const ligthTheme = {
-  backgroundColor: '#fafafa',
-  color: '#212121',
-  colorHover: '#2979ff',
-};
+import { darkTheme, ligthTheme } from './themes/themes';
 
 class App extends React.Component{
   constructor(props){
